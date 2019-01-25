@@ -1,9 +1,10 @@
-const Discord = require('discord.js');
+cons
+Discord = require('discord.js');
 const client = new Discord.Client();
  
 client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`);
-   client.user.setActivity("prefix : +",{type: 'WATCHING'})
+   client.user.setActivity("prefix : ++",{type: 'WATCHING'})
   console.log('')
   console.log('')
   console.log('╔[═════════════════════════════════════════════════════════════════]╗')
@@ -229,7 +230,7 @@ function play(guild, song) {
     serverQueue.textChannel.send(`بدء تشغيل : **${song.title}**`);
 }
  
-const adminprefix = "K";
+const adminprefix = "KK";
 const devs = ['405215218453446668'];
 client.on('message', message => {
   var argresult = message.content.split(` `).slice(1).join(' ');
