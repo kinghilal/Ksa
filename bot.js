@@ -89,7 +89,7 @@ client.on('message', async msg => {
                     .setDescription(`**الرجآء من حضرتك إختيآر رقم المقطع** :
 ${videos.map(video2 => `[**${++index} **] \`${video2.title}\``).join('\n')}`)
  
-                    .setFooter("By @! ๖ۣۜℜIP⇝ℳℜ_ℳⅅℳℛ👑#0590 ")
+                    .setFooter("By Logdd2 ")
                     msg.channel.sendEmbed(embed1).then(message =>{message.delete(20000)})
                    
                     // eslint-disable-next-line max-depth
@@ -104,7 +104,8 @@ ${videos.map(video2 => `[**${++index} **] \`${video2.title}\``).join('\n')}`)
                         return msg.channel.send('لم يتم إختيآر مقطع صوتي');
                     }
                     const videoIndex = parseInt(response.first().content);
-                    var video = await youtube.getVideoByID(videos[videoIndex - 1].id);
+                    var video = await youtube.getVideo
+                    ID(videos[videoIndex - 1].id);
                 } catch (err) {
                     console.error(err);
                     return msg.channel.send(':X: لا يتوفر نتآئج بحث ');
