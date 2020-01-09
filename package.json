@@ -1,7 +1,7 @@
 {
-    "name": "bytetech",
+    "name": "Logdd2",
     "version": "2.1.0",
-    "description": "-- AWESOMENESS --",
+    "description": "Logdd2",
     "main": "bot.js",
     "scripts": {
       "start": "node bot.js"
